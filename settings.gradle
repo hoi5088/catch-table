@@ -1,0 +1,4 @@
+rootProject.name = 'catch-table'
+include 'api'
+include 'infrastructure'
+findProject(':infrastructure')?.name = 'catch-table-infrastructure'
