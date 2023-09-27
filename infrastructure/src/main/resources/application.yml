@@ -6,9 +6,9 @@ spring:
   datasource:
     driver-class-name: org.postgresql.Driver
     url: jdbc:postgresql://localhost:5432/catchtable
-    platform: postgres
-    username: byyun
-    password: 0000
+    #platform: postgres
+    username: ${username}
+    password: ${password}
   # jpa properties
   jpa:
     hibernate:

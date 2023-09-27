@@ -3,4 +3,7 @@
 /infrastructure/build/
 /infrastructure/out/
 /infrastructure/out/production/classes/
-*.idea/
+*.idea
+*.iml
+/.idea/
+
