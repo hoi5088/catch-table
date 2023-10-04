@@ -3,6 +3,9 @@
 /infrastructure/build/
 /infrastructure/out/
 /infrastructure/out/production/classes/
+/infrastructure/src/main/generated/
+infrastructure/src/main/generated/
 *.idea
 *.iml
 /.idea/
+build/
