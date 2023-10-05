@@ -1,22 +1,13 @@
-plugins {
-    id 'java'
-}
-
-
-
-repositories {
-    mavenCentral()
-}
-
 dependencies {
-    //implementation project(":applications")
-    testImplementation 'org.junit.jupiter:junit-jupiter-api:5.7.0'
-    testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine:5.7.0'
-
+    //implementation project(":infrastructure")
+    implementation project(":domain")
     // spring boot
-    implementation 'org.springframework.boot:spring-boot-starter-validation'
+    implementation 'org.springframework.boot:spring-boot-starter-actuator'
     implementation 'org.springframework.boot:spring-boot-starter-web'
 
+    // spring data jpa
+    //EntityScan, EnableJpaRepositories 때문에 추가
+    //implementation 'org.springframework.boot:spring-boot-starter-data-jpa'
     // lombok
     compileOnly 'org.projectlombok:lombok'
     annotationProcessor 'org.projectlombok:lombok'
@@ -27,14 +18,16 @@ dependencies {
     testAnnotationProcessor "org.mapstruct:mapstruct-processor:1.5.5.Final"
 }
 
-test {
-    useJUnitPlatform()
+repositories {
+    mavenCentral()
 }
 
 bootJar {
+    //archiveFileName = "applications.${archiveExtension.get()}"
     enabled = false
 }
 
 jar {
     enabled = true
 }
+

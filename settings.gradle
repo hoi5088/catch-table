@@ -1,5 +1,5 @@
 rootProject.name = 'catch-table'
-include ':api'
+include ':applications'
 include ':infrastructure'
 include ':domain'
 
