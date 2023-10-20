@@ -21,3 +21,6 @@ spring:
 logging.level:
   org.hibernate.SQL: debug
   org.hibernate.type: trace
+jwt:
+  private.key: classpath:app.key
+  public.key: classpath:app.pub
