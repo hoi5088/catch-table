@@ -4,5 +4,5 @@ import com.byyun.ri.domain.model.sample.MemberDto;
 import com.byyun.ri.domain.model.sample.MemberModel;
 
 public interface SampleServicePort {
-	MemberModel sample(MemberDto memberDto);  //test
+	MemberModel sample(MemberDto memberDto);
 }
